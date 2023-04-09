@@ -1,0 +1,51 @@
+body{
+  background-color: black;
+}
+#main{
+  width: 800px;
+  height: 300px;
+   margin-left: 280px; 
+   background-color: white;
+   margin-top: 20px;
+}
+.logo{
+  margin-left: 165px;
+}
+#container {
+    width: 800px;
+    height: 300px;
+    border: 5px solid black;
+    position: relative;
+  }
+
+  #plankNG {
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    top: 280px;
+    left: 200px;
+    border-radius: 5px;
+  }
+
+  #ballNG {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    top: 250px;
+    left: 240px;
+  }
+  #restartBtn  {
+    float: right;
+    width: 80px;
+     height: 50px;
+     margin-top: 15px;
+     font-weight: bolder;
+    font-size: large;
+    border-radius: 10px;
+    display:none;
+    
+  }
+  
