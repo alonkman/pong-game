@@ -1,0 +1,39 @@
+{% extends "layout.html" %} {% block title %}Pong-Game{% endblock %} {% block
+content %}
+<div class="logo">
+  <img
+    class="logo"
+    src="\static\Untitled.png"
+    alt="My Logo"
+    style="background-size: cover"
+  />
+</div>
+
+<div></div>
+<div id="main" ;>
+  <div id="container">
+    <div id="ballNG"></div>
+    <div id="plankNG"></div>
+  </div>
+  <br />
+
+  <div id="playerData">
+    <input type="text" id="playerName" placeholder="Enter player name" />
+    <input
+      disabled
+      type="text"
+      id="playerScore"
+      
+    />
+    <button id="addPlayerBtn" onclick="addPlayer()">Add Player</button>
+  </div>
+
+  <h1 id="hitCount" style="float: left; color: white"></h1>
+  <br />
+  <button id="restartBtn" onclick="restartGame()">Restart</button>
+  <h1 id="gameStatus" style="text-align: center"></h1>
+</div>
+<!-- <script src="{{ url_for('static', filename='script.js') }}"></script> -->
+<br />
+
+{% endblock %}

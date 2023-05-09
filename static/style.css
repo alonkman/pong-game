@@ -1,0 +1,155 @@
+body{
+    background-color:  #e3e7ee;
+
+}
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ae94c0;
+  }
+  
+  #navbar li {
+    float: left;
+  }
+  
+  #navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  #navbar li a:hover {
+    background-color: #111;
+  }
+  #main{
+    width: 800px;
+    height: 300px;
+     margin-left: 280px; 
+     background-color: white;
+     margin-top: 20px;
+  }
+  .logo{
+    margin-left: 165px;
+  }
+  #container {
+      width: 800px;
+      height: 300px;
+      border: 5px solid black;
+      position: relative;
+    }
+  
+    #plankNG {
+      position: absolute;
+      width: 100px;
+      height: 10px;
+      background-color: black;
+      top: 280px;
+      left: 200px;
+      border-radius: 5px;
+    }
+  
+    #ballNG {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      border-radius: 50%;
+      top: 250px;
+      left: 240px;
+    }
+    #restartBtn  {
+      float: right;
+      width: 80px;
+       height: 50px;
+       margin-top: 15px;
+       font-weight: bolder;
+      font-size: large;
+      border-radius: 10px;
+      display:none;
+      
+    }
+    #playBtn  {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      border-color: black; 
+      
+
+    }
+    #scoreTable {
+      margin-top: 20px;
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 600px;
+      background-color: #f2f2f2;
+      font-size: 18px;
+     
+    }
+    
+    #score-table th, #score-table td {
+      text-align: left;
+      padding: 12px;
+    }
+    
+    #score-table th {
+      background-color: #333;
+      color: #fff;
+      font-weight: bold;
+    }
+    
+    #score-table tr:nth-child(even) {
+      background-color: #ddd;
+    }
+    
+    
+    #playerData {
+      margin-top: 20px;
+    }
+    
+    #playerData input {
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      margin-right: 10px;
+    }
+    
+    #playerData {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    #playerName,
+    #playerScore {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    
+    #playerName:focus,
+    #playerScore:focus {
+      outline: none;
+      border-color: #999;
+    }
+    
+    #addPlayerBtn {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    
+    #addPlayerBtn:hover {
+      background-color: #3e8e41;
+    }
+    
+    

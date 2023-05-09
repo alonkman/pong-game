@@ -1,0 +1,36 @@
+{% extends "layout.html" %} {% block title %}score{% endblock %} {% block
+content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='/static/style.css') }}"
+/>
+
+<table id="scoreTable">
+  <thead>
+    <tr>
+      <th>Player Name: </th>
+      <th>Player Score: </th>
+    </tr>
+  </thead>
+  <tbody id="myTableBody"></tbody>
+</table>
+
+<script>
+  // Retrieve the player data from local storage
+  const playerData = JSON.parse(localStorage.getItem("playerData"));
+
+  // Create rows in the table for each player
+  for (let i = 0; i < playerData.length; i++) {
+    let row = document.createElement("tr");
+    let nameCell = document.createElement("td");
+    let scoreCell = document.createElement("td");
+    nameCell.textContent = playerData[i].name;
+    scoreCell.textContent = playerData[i].score;
+    row.appendChild(nameCell);
+    row.appendChild(scoreCell);
+    document.getElementById("myTableBody").appendChild(row);
+  }
+</script>
+
+{% endblock %}
